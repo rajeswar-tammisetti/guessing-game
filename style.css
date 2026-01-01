@@ -1,0 +1,82 @@
+body{
+    font-family: Consolas, "Courier New", monospace;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(to right,#27296d,#5e63b6,#a393eb,#f5c7f7);
+    background-repeat: no-repeat;
+}
+#body{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5em;
+}
+#title{
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid #3a40bd;
+    background-color:#5e62b6;
+    transition: all 0.3s ease-in-out;
+}
+#buttons{
+    padding: 20px;
+    border-radius: 50px;
+}
+#buttons button{
+    font-family: Consolas, "Courier New", monospace;
+    font-weight: 900;
+    border: 2px solid #3a40bd;
+    background-color: #9597c434;
+    border-radius:30px;
+    width: 10em;
+    height: 3em;
+    background-color: 27296d;
+    transition: all 0.3s ease-in-out;
+}
+#buttons button:hover{
+    color: white;
+    border-radius: 10px;
+    border: 1px solid #3a40bd;
+    background-color: #5e63b6;
+    transform: translateY(0.5em);
+}
+#title:hover{
+    color: white;
+    border-radius: 30px;
+    border: 1px solid #3a40bd;
+    background-color: #5e63b6;
+    transform: translateY(0.5em);
+}
+
+@media screen and (max-width: 600px) {
+    #heading {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #body {
+        width: 90%;
+        padding: 1em;
+    }
+
+    #title {
+        padding: 15px;
+        border-radius: 30px;
+    }
+
+    #buttons button {
+        width: 80vw;
+        max-width: 300px;
+        font-size: 1.1rem;
+    }
+
+    #buttons button:hover, 
+    #title:hover {
+        transform: translateY(0.2em);
+    }
+}
